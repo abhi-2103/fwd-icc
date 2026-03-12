@@ -1,7 +1,7 @@
 function login() {
 
-    let user = document.getElementById("username").value;
-    let pass = document.getElementById("password").value;
+let user = document.getElementById("username") ? document.getElementById("username").value : "";
+    let pass = document.getElementById("password") ? document.getElementById("password").value : "";
 
     if (user === "icc" && pass === "cricket123") {
         document.getElementById("message").innerHTML = "Login Successful";
