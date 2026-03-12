@@ -1,0 +1,58 @@
+body{
+font-family:Arial;
+margin:0;
+background:#0b1d3a;
+color:white;
+}
+
+h1{
+color:white;
+}
+
+table{
+margin:auto;
+width:70%;
+border-collapse:collapse;
+background:white;
+}
+
+th, td{
+padding:10px;
+border:1px solid #ccc;
+}
+
+th{
+background:#003366;
+color:#08152b;
+}
+
+tr:nth-child(even){
+background:#f2f2f2;
+}
+
+tr:hover{
+background: whitesmoke;
+}
+body{
+font-family:Arial;
+margin:0;
+background:#0b1d3a;
+color:#1f5fae;
+}
+
+/* Navbar */
+
+.navbar{
+background:#08152b;
+padding:15px;
+text-align:center;
+}
+
+.navbar a{
+color:white;
+margin:0 15px;
+text-decoration:none;
+font-weight:bold;
+}
+
+
