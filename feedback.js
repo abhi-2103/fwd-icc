@@ -1,17 +1,5 @@
 // feedback.js
 
-function loadFeedbacks() {
-  // get existing array or empty
-  const saved = JSON.parse(localStorage.getItem("feedbacks") || "[]");
-  const listDiv = document.getElementById("feedbackList");
-  listDiv.innerHTML = ""; // clear
-
-  saved.forEach(entry => {
-    const p = document.createElement("p");
-    p.textContent = `${entry.time} - ${entry.name} (${entry.email}, ${entry.rating}): ${entry.feedback}`;
-    listDiv.appendChild(p);
-  });
-}
 
 function submitFeedback() {
   let name = document.getElementById("name").value;
@@ -49,7 +37,6 @@ function submitFeedback() {
   document.getElementById("feedback").value = "";
 
   // update list on page
-  loadFeedbacks();
 
   // also show in console (for your ma'am, via Inspect → Console)
   console.log("New feedback submitted:", entry);
@@ -57,3 +44,4 @@ function submitFeedback() {
 
 // load existing feedbacks when page opens
 window.onload = loadFeedbacks;
+
