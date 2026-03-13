@@ -88,4 +88,24 @@ border-radius:5px;
 
 button:hover{
 background:#0d6efd;
+
+}
+@media (max-width:600px){
+
+.navbar{
+flex-direction:column;
+}
+
+nav{
+margin-top:10px;
+}
+
+.cards{
+flex-direction:column;
+align-items:center;
+}
+
+.card{
+width:90%;
+}
 }
