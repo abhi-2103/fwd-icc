@@ -54,24 +54,34 @@ margin:0 15px;
 text-decoration:none;
 font-weight:bold;
 }
-@media (max-width:600px){
 
-.navbar{
-flex-direction:column;
+@media screen and (max-width: 768px){
+
+    h1{
+        font-size: 20px;
+    }
+
+    table{
+        width: 95%;
+        font-size: 14px;
+    }
+
+    th, td{
+        padding: 6px;
+    }
+
+    .navbar{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .navbar a{
+        padding: 8px;
+        font-size: 16px;
+    }
+
 }
 
-nav{
-margin-top:10px;
-}
-
-.cards{
-flex-direction:column;
-align-items:center;
-}
-
-.card{
-width:90%;
-}
 
 
 
