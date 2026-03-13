@@ -109,3 +109,65 @@ align-items:center;
 width:90%;
 }
 }
+
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+    padding: 0 10px;
+  }
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+  }
+  .navbar a {
+    display: inline-block;
+    padding: 8px 12px;
+    font-size: 14px;
+  }
+  .matches-section {
+    padding: 20px 10px;
+  }
+  .match-card {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 15px;
+  }
+  .match-left p {
+    font-size: 14px;
+  }
+  .match-time {
+    align-self: stretch;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .match-teams {
+    flex-direction: column;
+    gap: 8px;
+  }
+  .team span {
+    font-size: 14px;
+  }
+  .match-time button {
+    padding: 6px 10px;
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 22px;
+  }
+  .match-date {
+    font-size: 16px;
+  }
+  .match-card {
+    padding: 12px;
+  }
+  .match-time strong {
+    font-size: 14px;
+  }
+}
+
